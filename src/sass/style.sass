@@ -36,7 +36,7 @@ body
             line-height: 100%
 
 .promo
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)), url('../img/background-promo.jpg') center center / cover no-repeat
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.2)), url('../img/vizir-hands.jpg') center center / cover no-repeat
     height: 900px
     &_img
         right: 300px
@@ -249,7 +249,7 @@ body
 
 .certificates
     background-color: #FF9398
-    padding: 10px 0
+    padding: 20px 0 30px 0
     color: white
     text-align: center
     & .title
@@ -388,7 +388,8 @@ body
     clear: both
 
 #timeline
-    max-width: 1100px
+    max-width: 1200px
+
     width: 100%
     margin: 30px auto
     position: relative
@@ -397,9 +398,9 @@ body
 
     &:before
         content: ""
-        width: 3px
-        height: 100%
-        background: #337AB7
+        width: 4px
+        height: 108%
+        background: #ff9398
         left: 50%
         top: 0
         position: absolute
@@ -415,22 +416,23 @@ body
         position: relative
 
     & .timeline-item .timeline-icon
-        background: #337AB7
+        background: #ff9398
         color: #FFF
         text-align: center
         font-size: 24px
         line-height: 50px
-        width: 50px
-        height: 50px
+        width: 70px
+        height: 70px
         position: absolute
         top: 0
         left: 50%
         overflow: hidden
-        margin-left: -23px
+        margin-left: -30px
         border-radius: 50%
 
     & .timeline-item .timeline-icon i
-        line-height: 50px
+        line-height: 70px
+        font-size: 1.9rem
 
     & .timeline-item .timeline-content
         width: 45%
@@ -439,13 +441,17 @@ body
         box-shadow: 0 2px 5px rgba(0,0,0,0.2), 0 4px 10px rgba(0,0,0,0.2)
         border-radius: 5px
         transition: all 0.3s ease
+        font-weight: 400
+        font-size: 1.2rem
 
     & .timeline-item .timeline-content h4
+        text-align: center
         padding: 15px
-        background: #337AB7
+        background: #ff9398
         color: #fff
         margin: -20px -20px 10px -20px
-        font-weight: 300
+        font-weight: 500
+        text-transform: uppercase
         border-radius: 3px 3px 0 0
 
     & .timeline-item .timeline-content:before
@@ -457,7 +463,7 @@ body
         height: 0
         border-top: 7px solid transparent
         border-bottom: 7px solid transparent
-        border-left: 7px solid #337AB7
+        border-left: 7px solid #ff9398
 
     & .timeline-item:nth-child(even) .timeline-content
         float: right
@@ -467,6 +473,59 @@ body
         right: 45%
         left: inherit
         border-left: 0
-        border-right: 7px solid #337AB7
+        border-right: 7px solid #ff9398
 
-.order_process
+.how-to-order
+    padding: 20px 0 20px 0
+    background: url('../img/Подложка.png')
+    .title
+        line-height: 1.5
+        margin-bottom: 0
+    .subtitle
+        text-align: center
+        font-weight: 400
+        font-size: 1rem
+        line-height: 1.1
+        margin-bottom: 20px
+
+.contact
+    background: #ff9398
+    height: auto
+    padding: 20px 0 40px 0
+    marh
+    .title
+        color: white
+    &_content
+        display: flex
+        .map
+            box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1)
+        &_info
+            width: 60%
+            height: 600px
+            background: white
+            box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.1)
+            padding: 100px 10px 0px 130px
+            h3
+                font-size: 38px
+                font-weight: 500
+                line-height: 1.5
+            p
+                font-size: 1.2rem
+                font-weight: 400
+                line-height: 1.2
+            hr
+                width: 90%
+            .social-networks
+                margin-top: 20px
+                display: flex
+                gap: 10px
+                flex-direction: column
+                justify-content: space-between
+                width: 100%
+                .social
+                    display: flex
+                    align-items: center
+                    gap: 10px
+                .fa-brands
+                    font-size: 3rem
+              
