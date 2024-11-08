@@ -1,0 +1,129 @@
+.timeline {
+  margin-top: 40px;
+  padding-right: 100px;
+  position: relative;
+}
+
+/* Rounded corner for the timeline line */
+.timeline::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 31px;
+  height: 231px;
+  border: 2px dashed #e5e5e5;
+  border-left: none;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  width: 100px;
+}
+
+.line {
+  display: flex;
+  position: relative;
+  height: 200px;
+}
+
+.bottom-line {
+  flex-direction: row-reverse;
+  margin-top: 30px;
+}
+
+.line-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+/* Main dashed line */
+.line-item::before {
+  content: '';
+  position: absolute;
+  top: 31px;
+  left: 0;
+  right: 0;
+  border-top: 2px dashed #e5e5e5;
+}
+
+/* Final dashed line adjustment */
+.line-item.line-item-finish::before {
+  width: 60px;
+  right: -5px;
+}
+
+.bottom-line .line-item {}
+
+.line-item .text {
+  margin-top: 10px;
+  text-align: center;
+  width: 400px;
+}
+
+.circle {
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  background: #FF9398;
+  position: relative;
+  z-index: 1;
+}
+
+.line-item-finish .circle {
+  background: #90be6d;
+}
+
+.circle img,
+.circle i {
+  font-size: 1.5em;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Responsive layout adjustments */
+@media screen and (max-width: 700px) {
+  .timeline {
+    padding: 0;
+  }
+
+  .timeline::after {
+    display: none;
+  }
+
+  .line {
+    flex-direction: column;
+    height: unset;
+  }
+
+  .line-item {
+    flex-direction: row;
+    align-items: flex-start !important;
+    margin-bottom: 20px;
+  }
+
+  .line-item .text {
+    margin-top: 0;
+    margin-left: 20px;
+    text-align: left;
+  }
+
+  .line-item::before {
+    content: '';
+    position: absolute;
+    left: 51px;
+    top: 0;
+    bottom: 0;
+    border-left: 2px dashed #e5e5e5;
+  }
+
+  .line-item.line-item-finish::before {
+    height: 60px;
+    right: unset;
+    left: 51px;
+    top: 5px;
+  }
+}

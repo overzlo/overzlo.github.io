@@ -117,46 +117,36 @@ body
             flex-direction: column-reverse
 
 .about_us
-    height: 900px
     padding: 30px
-    img
-        cursor: pointer
     &_content
-        margin-top: 40px
         display: flex
-        gap: 30px
-        height: 600px
-        &_text
-            width: 50%
-            font-size: 1.2rem
-            font-weight: 400
-            line-height: 1.6
-        &_text p
-            margin-bottom: 10px
-            text-align: justify
+        max-width: 1400px
+        margin: 0 auto
+        margin-top: 40px
+        justify-content: center
+        gap: 40px
+        align-items: center
         &_img
             width: 50%
+            height: 30%
             display: flex
-            flex-direction: column
-            gap: 10px
-
-        .main-img
-            width: 100%
-            height: 70%
-            & img
+            flex-direction: row-reverse
+            .main-img
+                position: relative
+                bottom: -10%
+                left: 10%
                 width: 100%
                 height: 100%
                 object-fit: cover
-                box-shadow: 3px 4px 3px rgba(0, 0, 0,0.1 )
+                border-radius: 100%
+                cursor: help
+        &_text
+            width: 40%
+            font-size: 1.2rem
+            font-weight: 400
+            line-height: 1.6
 
-        .add-img
-            display: flex
-            gap: 10px
-            & img
-                width: calc(50% - 5px)
-                height: 90%
-                object-fit: cover
-                box-shadow: 3px 4px 3px rgba(0, 0, 0,0.1 )
+            text-align: right
 
 .title
     font-size: 38px
@@ -167,62 +157,10 @@ body
     margin-bottom: 20px
     margin-top: 20px
 
-.supreme_quality
-    background: #ff9398
-    padding: 10px 0
-    color: white
-    height: auto
-    .title
-        color: white
-        line-height: 1.5
-    .subtitle
-        margin-top: 5px
-        text-align: center
-        font-weight: 400
-        font-size: 1rem
-        line-height: 1.1
-    .supreme_cards
-        margin-top: 40px
-        display: flex
-        justify-content: space-evenly
-        &_card
-            display: flex
-            flex-direction: column
-            width: 300px
-            height: 400px
-            .card_img
-                width: 100%
-                height: 50%
-                .fa-2xl
-                    font-size: 10em
-                img
-                    width: 100%
-                    height: 100%
-                    object-fit: cover
-                    border-radius: 50%
-            .card_text
-                display: flex
-                flex-direction: column
-                text-align: center
-                .text_title
-                    margin-top: 15px
-                    font-weight: 500
-                    font-size: 1.2rem
-                    line-height: 1.4
-                    text-transform: uppercase
-                .text_descr
-                    margin-top: 5px
-                    font-weight: 400
-                    font-size: 1rem
-                    line-height: 1.1
-
 .certificates
-    background-color: #FF9398
+    margin-top: 60px
     padding: 20px 0 30px 0
-    color: white
     text-align: center
-    & .title
-        color: white
     &_text
         font-size: 1.2em
         margin-bottom: 20px
@@ -236,11 +174,8 @@ body
             height: auto
             border-radius: 8px
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
-            border: 2px solid #ECD06F
             transition: transform 0.3s ease
-            cursor: pointer
-        img:hover
-            transform: scale(1.1)
+            cursor: zoom-in
 .modal
     display: none
     position: fixed
@@ -284,47 +219,57 @@ body
 .assortiments
     height: auto
     padding: 20px 0 50px 0
+    img
+        cursor: help
     .assortiments_cards_1
         margin-top: 40px
         display: flex
-        gap: 100px
+        justify-content: center
+        gap: 20px
+        flex-wrap: wrap
         .ass_card_img
             display: flex
             justify-content: center
-            width: 60%
-            height: 500px
-            gap: 20px
+            width: 30%
+
             img
                 width: 100%
                 height: 100%
-                object-fit: fil
+                object-fit: cover
                 box-shadow: 3px 3px 3px rgba(0,0,0,0.1)
-        .ass_card_text
-            width: 50%
-            display: flex
-            flex-direction: column
-            &_title
-                font-weight: 500
-                font-size: 26px
-                line-height: 1.2
-            &_descr
-                margin-top: 10px
-                font-weight: 400
-                font-size: 1.2rem
-            .btn-1
-                background: #FF9398
-                color: #fff
-                margin: 0
-                margin-top: 30px
-    .ass_card_img_2
+
+    .assortiments_cards_2
         margin-top: 30px
         display: flex
-        gap: 25px
+        justify-content: center
+        gap: 20px
+        flex-wrap: wrap
         img
-            width: 33%
-            height: 500px
+            width: 30%
+            height: 700px
+            object-fit: cover
             box-shadow: 3px 3px 3px rgba(0,0,0,0.1)
+    .ass_card_text
+        margin-top: 40px
+        width: 33%
+        display: flex
+        flex-direction: column
+        text-align: center
+        justify-content: center
+        &_title
+            font-weight: 500
+            font-size: 26px
+            line-height: 1.2
+        &_descr
+            margin-top: 20px
+            font-weight: 400
+            font-size: 1.2rem
+        .btn-1
+            background: white
+            color: #ff9398
 
+            margin: 0
+            margin-top: 30px
 .btn
     border: none
     font-family: 'Lato'
@@ -344,109 +289,12 @@ body
     -moz-transition: all 0.3s
     transition: all 0.3s
 
-#timeline *,
-#timeline *:before,
-#timeline *:after
-    box-sizing: border-box
 
-#timeline .timeline-item:after,
-#timeline .timeline-item:before
-    content: ''
-    display: block
-    width: 100%
-    clear: both
-
-#timeline
-    max-width: 1200px
-
-    width: 100%
-    margin: 30px auto
-    position: relative
-    padding: 0 10px
-    transition: all 0.4s ease
-
-    &:before
-        content: ""
-        width: 4px
-        height: 108%
-        background: #ff9398
-        left: 50%
-        top: 0
-        position: absolute
-
-    &:after
-        content: ""
-        clear: both
-        display: table
-        width: 100%
-
-    & .timeline-item
-        margin-bottom: 50px
-        position: relative
-
-    & .timeline-item .timeline-icon
-        background: #ff9398
-        color: #FFF
-        text-align: center
-        font-size: 24px
-        line-height: 50px
-        width: 70px
-        height: 70px
-        position: absolute
-        top: 0
-        left: 50%
-        overflow: hidden
-        margin-left: -30px
-        border-radius: 50%
-
-    & .timeline-item .timeline-icon i
-        line-height: 70px
-        font-size: 1.9rem
-
-    & .timeline-item .timeline-content
-        width: 45%
-        background: #fff
-        padding: 10px 20px
-        box-shadow: 0 2px 5px rgba(0,0,0,0.2), 0 4px 10px rgba(0,0,0,0.2)
-        border-radius: 5px
-        transition: all 0.3s ease
-        font-weight: 400
-        font-size: 1.2rem
-
-    & .timeline-item .timeline-content h4
-        text-align: center
-        padding: 15px
-        background: #ff9398
-        color: #fff
-        margin: -20px -20px 10px -20px
-        font-weight: 500
-        text-transform: uppercase
-        border-radius: 3px 3px 0 0
-
-    & .timeline-item .timeline-content:before
-        content: ''
-        position: absolute
-        left: 45%
-        top: 20px
-        width: 0
-        height: 0
-        border-top: 7px solid transparent
-        border-bottom: 7px solid transparent
-        border-left: 7px solid #ff9398
-
-    & .timeline-item:nth-child(even) .timeline-content
-        float: right
-
-    & .timeline-item:nth-child(even) .timeline-content:before
-        content: ''
-        right: 45%
-        left: inherit
-        border-left: 0
-        border-right: 7px solid #ff9398
 
 .how-to-order
     padding: 20px 0 20px 0
     background: url('../img/Подложка.png')
+    height: 700px
     .title
         line-height: 1.5
         margin-bottom: 0
@@ -460,26 +308,22 @@ body
 .contact
     background: #ff9398
     height: auto
-    padding: 20px 0 40px 0
-
     .title
-        color: white
     &_content
         display: flex
-        .map
-            box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1)
         &_info
+            display: flex
+            flex-direction: column
+            justify-content: center
             width: 60%
-            height: 600px
-            background: white
-            box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.1)
+            height: 900px
             padding: 100px 10px 0px 130px
             h3
-                font-size: 38px
+                font-size: 40px
                 font-weight: 500
                 line-height: 1.5
             p
-                font-size: 1.2rem
+                font-size: 1.5rem
                 font-weight: 400
                 line-height: 1.2
             hr

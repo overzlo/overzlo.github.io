@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/timeline.css">
     <script src="https://kit.fontawesome.com/1b5652d694.js" crossorigin="anonymous"></script>
 
 </head>
@@ -50,7 +51,9 @@
 
     </section>
     <section class="why_us">
-
+        <div class="title">
+            <h2>Что мы предлагаем</h2>
+        </div>
         <div class="container">
             <div class="row">
                 <div class="wrap">
@@ -94,142 +97,91 @@
 
     </section>
     <section class="assortiments">
-        <div class="container">
-            <div class="title">
-                <h2>НАШ ТОВАР</h2>
+        <div class="title">
+            <h2>Наш ассортимент</h2>
+        </div>
+        <div class="assortiments_cards_1">
+
+            <div class="ass_card_img">
+                <img src="img/ass1.jpg" onclick="openModal(this)" alt="">
+                <!-- <img src="img/kid-4.jpg" alt=""> -->
             </div>
-            <div class="row">
-                <div class="assortiments_cards_1">
-                    <div class="ass_card_img">
-                        <img src="img/as2.jpg" alt="">
-                        <!-- <img src="img/kid-4.jpg" alt=""> -->
-                    </div>
-
-                    <div class="ass_card_text">
-                        <div class="ass_card_text_title">Выбирайте лучшее для ваших детей с Vizir Collection!
-                        </div>
-                        <div class="ass_card_text_descr">В нашем ассортименте представлена одежда для малышей от 0 до 1
-                            года и для детей от 1 до 8 лет. Мы понимаем, как важно выбрать качественную и комфортную
-                            одежду для вашего ребенка, особенно в ранние годы его жизни. Наша коллекция создана с учетом
-                            потребностей самых маленьких и активных детей, гарантируя удобство и стиль на каждом этапе
-                            их роста.
-                        </div>
-                        <button class="btn btn-1 btn-sep icon-info">Посмотреть весь каталог!</button>
-                    </div>
-                </div>
-
-                <div class="assortiments_cards_2">
-                    <div class="ass_card_img_2">
-                        <img src="img/kid-5.jpg" alt="">
-                        <img src="img/kid-1.jpg" alt="">
-                        <img src="img/kid-2.jpg" alt="">
-
-                    </div>
-                </div>
+            <div class="ass_card_img">
+                <img src="img/ass3.jpg" onclick="openModal(this)" alt="">
+                <!-- <img src="img/kid-4.jpg" alt=""> -->
             </div>
+            <div class="ass_card_img">
+                <img src="img/ass2.jpg" onclick="openModal(this)" alt="">
+                <!-- <img src="img/kid-4.jpg" alt=""> -->
+            </div>
+
+        </div>
+
+        <div class="assortiments_cards_2">
+            <img src="img/kid-5.jpg" onclick="openModal(this)" alt="">
+            <img src="img/kid-1.jpg" onclick="openModal(this)" alt="">
+            <img src="img/kid-2.jpg" onclick="openModal(this)" alt="">
+
+            <img src="img/ass4.jpg" onclick="openModal(this)">
+            <img src="img/ass5.jpg" onclick="openModal(this)">
+            <img src="img/ass6.jpg" onclick="openModal(this)">
+            <img src="img/ass7.jpg" onclick="openModal(this)">
+
+            <div class="ass_card_text">
+                <div class="ass_card_text_title">Выбирайте лучшее для ваших детей с Vizir Collection!
+                </div>
+                <div class="ass_card_text_descr">В нашем ассортименте представлена одежда для малышей от 0 до 1
+                    года и для детей от 1 до 8 лет. Мы понимаем, как важно выбрать качественную и комфортную
+                    одежду для вашего ребенка, особенно в ранние годы его жизни. Наша коллекция создана с учетом
+                    потребностей самых маленьких и активных детей, гарантируя удобство и стиль на каждом этапе
+                    их роста.
+                </div>
+                <button class="btn btn-1 btn-sep icon-info">Посмотреть весь каталог!</button>
+            </div>
+            <img src="img/ass8.jpg" onclick="openModal(this)">
+
+        </div>
+
         </div>
         </div>
     </section>
 
-    <section class="supreme_quality">
-        <div class="title">SUPREME - ЗАЛОГ КОМФОРТА</div>
-        <div class="container">
-            <div class="row">
-                <div class="subtitle">Визирь гордится тем, что использует для своей детской одежды тонкую и невероятно
-                    комфортную ткань Supreme, изготовленную из натуральных хлопковых волокон. <br>Мы понимаем, как важна
-                    забота о
-                    чувствительной коже детей, поэтому выбираем только лучшие материалы, которые абсолютно безопасны и
-                    безвредны.
-                </div>
-                <div class="supreme_cards">
-                    <div class="supreme_cards_card">
-                        <div class="card_img">
-                            <img src="img/s-1.jpg" alt="">
-                        </div>
-                        <div class="card_text">
-                            <div class="text_title">
-                                <h3>Чистота и безопасность</h3>
-                            </div>
-                            <div class="text_descr">
-                                <p>Полное отсутствие синтетических волокон гарантирует, что ваша
-                                    малышка будет чувствовать себя комфортно в любой ситуации.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="supreme_cards_card">
-                        <div class="card_img">
-                            <img src="img/s-3.jpg" alt="">
-                        </div>
-                        <div class="card_text">
-                            <div class="text_title">
-                                <h3>Отличная вентиляция</h3>
-                            </div>
-                            <div class="text_descr">
-                                <p>Ткань обеспечивает прекрасную циркуляцию воздуха, позволяя коже дышать и не
-                                    перегреваться даже в теплую погоду.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="supreme_cards_card">
-                        <div class="card_img">
-                            <img src="img/placeholder.jpg" alt="">
-                        </div>
-                        <div class="card_text">
-                            <div class="text_title">
-                                <h3>Простота в уходе</h3>
-                            </div>
-                            <div class="text_descr">
-                                <p>Изделия из ткани Supreme не теряют форму и цвет при стирке, оставаясь как новенькие
-                                    даже после многократного использования.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
 
 
     <section class="about_us">
-        <div class="title">О нас</div>
+        <div class="title">О нашей фабрике</div>
 
-        <div class="container">
-            <div class="row">
-                <div class="about_us_content">
-                    <div class="about_us_content_text">
-                        <p>
-                            История «VIZIR» насчитывает более 10 лет, когда в 2009 году была запущена первая фабрика по
-                            производству окрашенного полотна.
-                            Полный технологический цикл включает в себя все этапы производства — от очистки и подготовки
-                            хлопковолокна, изготовления пряжи и полотна до пошива, маркировки и финишной упаковки
-                            готовых
-                            швейных изделий из кроеного трикотажа. Передовые технологии производства «VIZIR» позволяют
-                            вырабатывать объёмные заказы в самые короткие сроки, стабильно поддерживать высокий уровень
-                            качества продукции, который соответствует требованиям самых взыскательных клиентов. Следует
-                            особо подчеркнуть тот факт, что продукция «VIZIR» экспортируется в страны ЕС, СНГ, в США,
-                            Турцию, Японию, Южную Корею и многие другие. Это говорит о том, что наш бренд соответствует
-                            самым высоким стандартам качества. Это обусловлено экологичностью, экономичностью, широким
-                            ассортиментом, высочайшим качеством полотна и современным дизайном нашей продукции. Такой
-                            подход
-                            к производству позволяет с годами расширять географию успеха компании.
-                        </p>
-                    </div>
+        <div class="about_us_content">
+            <div class="about_us_content_img">
+                <img src="img/au-1.jpg" alt="" onclick="openModal(this)" class="main-img">
 
-                    <div class="about_us_content_img">
-                        <div class="main-img"><img src="img/au-1.jpg" onclick="openModal(this)"
-                                alt="Производственный процесс"></div>
-                        <div class="add-img">
-                            <img src="img/au-2.jpg" onclick="openModal(this)" alt="Наши рабочие станки">
-                            <img src="img/au-3.jpg" onclick="openModal(this)" alt="Наши рабочие станки">
-                        </div>
-                    </div>
-                </div>
             </div>
+            <div class="about_us_content_text">
+                <p>
+                    История «VIZIR» насчитывает более 10 лет, когда в 2009 году была запущена первая фабрика по
+                    производству окрашенного полотна.
+                    Полный технологический цикл включает в себя все этапы производства — от очистки и подготовки
+                    хлопковолокна, изготовления пряжи и полотна до пошива, маркировки и финишной упаковки
+                    готовых
+                    швейных изделий из кроеного трикотажа.
+                <p>Передовые технологии производства «VIZIR» позволяют
+                    вырабатывать объёмные заказы в самые короткие сроки, стабильно поддерживать высокий уровень
+                    качества продукции, который соответствует требованиям самых взыскательных клиентов. Следует
+                    особо подчеркнуть тот факт, что продукция «VIZIR» экспортируется в страны ЕС, СНГ, в США,
+                    Турцию, Японию, Южную Корею и многие другие. Это говорит о том, что наш бренд соответствует
+                    самым высоким стандартам качества. Это обусловлено экологичностью, экономичностью, широким
+                    ассортиментом, высочайшим качеством полотна и современным дизайном нашей продукции. Такой
+                    подход
+                    к производству позволяет с годами расширять географию успеха компании.</p>
+                </p>
+            </div>
+
         </div>
     </section>
 
     <section class="certificates">
-        <div class="title">Нам доверяют!</div>
+        <div class="title">Сертифакты</div>
         <div class="container">
             <div class="certificates_text">
                 Мы гордимся нашими сертификатами, подтверждающими соответствие международным стандартам качества.
@@ -252,117 +204,109 @@
 
 
     <section class="how-to-order">
-        <div class="title">КАК ЗАКАЗАТЬ?</div>
+        <div class="title">Как мы работаем</div>
         <div class="container">
             <div class="row">
                 <div class="subtitle">Следуйте этим шагам для быстрого и удобного оформления заказа</div>
 
-                <div class="order_process">
-                    <div id="timeline">
-                        <div class="timeline-item">
-                            <div class="timeline-icon">
-                                <i class="fa-solid fa-eye"></i>
+                <div class="timeline">
+                    <div class="line top-line">
+                        <div class="line-item">
+                            <div class="circle">
+                                <div class="timeline-icon">
+                                    <i class="fa-solid fa-eye"></i>
+                                </div>
                             </div>
-                            <div class="timeline-content">
+                            <div class="text">
                                 <h4>ОБЗОР</h4>
                                 <p>Просмотр нашей коллекции в ленте инстаграмм или в ленте телеграмма</p>
                             </div>
                         </div>
-                        <div class="timeline-item">
-                            <div class="timeline-icon">
+                        <div class="line-item">
+                            <div class="circle">
                                 <i class="fa-solid fa-cart-shopping"></i>
                             </div>
-                            <div class="timeline-content">
+                            <div class="text">
                                 <h4>Добавить в корзину</h4>
                                 <p>После выбора, перейдя по ссылке в профиле отправляеете заказ на наш WhatsApp/Telegram
                                     номер
                                 </p>
                             </div>
                         </div>
-                        <div class="timeline-item">
-                            <div class="timeline-icon">
+                        <div class="line-item">
+                            <div class="circle">
                                 <i class="fa-solid fa-dollar-sign"></i>
                             </div>
-                            <div class="timeline-content">
+                            <div class="text">
                                 <h4>Оплата</h4>
                                 <p>После того, как вы согласавали заказ с менеджером, оплачиваете заказ. Действует карт.
                                     счета:
                                     Kaspi, Halyk Bank</p>
-
                             </div>
                         </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-icon">
+                    </div>
+                    <div class="line bottom-line">
+                        <div class="line-item">
+                            <div class="circle">
                                 <i class="fa-solid fa-truck"></i>
                             </div>
-                            <div class="timeline-content">
+                            <div class="text">
                                 <h4>Доставка</h4>
                                 <p>Время доставки зависит от того, где вы находитесь. Доставка в пределах страны обычно
                                     занимает
                                     от 1 до 7 дней. ОТправляем Казпочтой, ЖД поездом, камаз. В РФ отправляем через
                                     логистическую
-                                    компанию "Энергия"
+                                    компанию "Энергия"</p>
                             </div>
+                        </div>
+                        <div class="line-item line-item-finish">
+                            <div class="circle">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div class="text">Конец</div>
                         </div>
 
-                        <div class="timeline-item">
-                            <div class="timeline-icon">
-                                <i class="fa-solid fa-thumbs-up"></i>
-                            </div>
-                            <div class="timeline-content">
-                                <h4>Получение заказа</h4>
-                                <p>Ура! Вы получили свой заказ. Желаем удачной продажи и не забываем оставить отзыв!
-                                </p>
-                            </div>
-                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
     </section>
 
-    <section class="contact">
-        <div class="title">Свяжитесь с нами</div>
-        <div class="container">
-            <div class="row">
-                <div class="contact_content">
-                    <div style="position:relative;overflow:hidden;" class="map"><a
-                            href="https://yandex.kz/maps/org/alash/108573670224/?utm_medium=mapframe&utm_source=maps"
-                            style="color:#eee;font-size:12px;position:absolute;top:0px;">Alash</a><a
-                            href="https://yandex.kz/maps/221/chimkent/category/shopping_mall/184108083/?utm_medium=mapframe&utm_source=maps"
-                            style="color:#eee;font-size:12px;position:absolute;top:14px;">Торговый центр в
-                            Шымкенте</a><a
-                            href="https://yandex.kz/maps/221/chimkent/category/farmers_market/187142065569/?utm_medium=mapframe&utm_source=maps"
-                            style="color:#eee;font-size:12px;position:absolute;top:28px;">Продуктовый рынок в
-                            Шымкенте</a><iframe
-                            src="https://yandex.kz/map-widget/v1/?ll=69.530130%2C42.355725&mode=poi&poi%5Bpoint%5D=69.529613%2C42.354880&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D108573670224&z=18.39"
-                            width="560" height="600" frameborder="1" allowfullscreen="true"
-                            style="position:relative; box-shadow: rgba(0,0,0,10);"></iframe>
-                    </div>
-                    <div class="contact_content_info">
-                        <h3>Наш адрес</h3>
-                        <p>Мы располагаемся по адресу: г.Шымкент , рынок Алаш, торговый дом Береке 8 бутик </p>
-                        <hr>
-                        <h3>Социальные сети</h3>
-                        <div class="social-networks">
-                            <div class="social">
-                                <a href="https://www.instagram.com/vizircollection/"><i
-                                        class="fa-brands fa-instagram"></i></a>
-                                <h4>@vizicollection</h4>
-                            </div>
-                            <div class="social"> <a href="https://t.me/VizirOptom"><i
-                                        class="fa-brands fa-telegram"></i></a>
-                                <h4>@VizirOptom</h4>
-                            </div>
-                            <div class="social"><a href=""><i class="fa-brands fa-whatsapp"></i></a>
-                                <h4>+757445795</h4>
-                            </div>
-                        </div>
-                    </div>
 
+
+    <section class="contact">
+        <div class="contact_content">
+            <div style="position:relative;overflow:hidden;" class="map"><a
+                    href="https://yandex.kz/maps/org/alash/108573670224/?utm_medium=mapframe&utm_source=maps"
+                    style="color:#eee;font-size:12px;position:absolute;top:0px;">Alash</a><a
+                    href="https://yandex.kz/maps/221/chimkent/category/shopping_mall/184108083/?utm_medium=mapframe&utm_source=maps"
+                    style="color:#eee;font-size:12px;position:absolute;top:14px;">Торговый центр в
+                    Шымкенте</a><a
+                    href="https://yandex.kz/maps/221/chimkent/category/farmers_market/187142065569/?utm_medium=mapframe&utm_source=maps"
+                    style="color:#eee;font-size:12px;position:absolute;top:28px;">Продуктовый рынок в
+                    Шымкенте</a><iframe
+                    src="https://yandex.kz/map-widget/v1/?ll=69.530130%2C42.355725&mode=poi&poi%5Bpoint%5D=69.529613%2C42.354880&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D108573670224&z=18.39"
+                    width="1000px" height="900px" frameborder="1" allowfullscreen="true"
+                    style="position:relative"></iframe>
+            </div>
+            <div class="contact_content_info">
+                <h3>Наш адрес</h3>
+                <p>Мы располагаемся по адресу: Республика Казахстан, г. Шымкент , рынок Алаш, торговый дом Береке 8 бутик </p>
+                <hr>
+                <h3>Социальные сети</h3>
+                <div class="social-networks">
+                    <div class="social">
+                        <a href="https://www.instagram.com/vizircollection/"><i class="fa-brands fa-instagram"></i></a>
+                        <h4>@vizicollection</h4>
+                    </div>
+                    <div class="social"> <a href="https://t.me/VizirOptom"><i class="fa-brands fa-telegram"></i></a>
+                        <h4>@VizirOptom</h4>
+                    </div>
+                    <div class="social"><a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                        <h4>+757445795</h4>
+                    </div>
                 </div>
             </div>
+
+
         </div>
 
 
