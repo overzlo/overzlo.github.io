@@ -4,15 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
+
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="css/style.min.css">
+
     <link rel="stylesheet" href="css/timeline.css">
+    <link rel="stylesheet" href="css/adaptation.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <script src="https://kit.fontawesome.com/1b5652d694.js" crossorigin="anonymous"></script>
 
 </head>
@@ -20,18 +25,25 @@
 <body>
 
     <header>
-        <nav class="header">
-            <div class="header_img"><img src="img/logo.png" alt="logo"></div>
-
-            <ul class="menu">
-                <li class="menu_item"><a href="#" class="menu_link"></a>Главная</li>
-                <li class="menu_item"><a href="#" class="menu_link"></a>О нас</li>
-                <li class="menu_item"><a href="#" class="menu_link"></a>Контакты</li>
-                <li class="menu_item"><a href="#" class="menu_link"></a>ФЫВ</li>
-            </ul>
-
-
+        <nav>
+            <div class="container">
+                <ul class="menu">
+                    <li class="menu_item"><a href="#" class="menu_link">Главная</a></li>
+                    <li class="menu_item"><a href="#" class="menu_link">Что мы предлагаем</a></li>
+                    <li class="menu_item"><a href="#" class="menu_link">Наши товары</a></li>
+                    <li class="menu_item"><img src="img/logo.png" alt="" class="visible-img"></li>
+                    <li class="menu_item"><a href="#" class="menu_link">О нас</a></li>
+                    <li class="menu_item"><a href="#" class="menu_link">Процесс заказа</a></li>
+                    <li class="menu_item"><a href="#" class="menu_link">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
+
     </header>
 
     <section class="promo">
@@ -138,7 +150,7 @@
                 </div>
                 <button class="btn btn-1 btn-sep icon-info">Посмотреть весь каталог!</button>
             </div>
-            <img src="img/ass8.jpg" onclick="openModal(this)">
+            <img src="img/ass8.jpg" onclick="openModal(this)" class="visible-img">
 
         </div>
 
@@ -206,67 +218,69 @@
     <section class="how-to-order">
         <div class="title">Как мы работаем</div>
         <div class="container">
-            <div class="row">
-                <div class="subtitle">Следуйте этим шагам для быстрого и удобного оформления заказа</div>
+            <div class="subtitle">Следуйте этим шагам для быстрого и удобного оформления заказа</div>
 
-                <div class="timeline">
-                    <div class="line top-line">
-                        <div class="line-item">
-                            <div class="circle">
-                                <div class="timeline-icon">
-                                    <i class="fa-solid fa-eye"></i>
-                                </div>
-                            </div>
-                            <div class="text">
-                                <h4>ОБЗОР</h4>
-                                <p>Просмотр нашей коллекции в ленте инстаграмм или в ленте телеграмма</p>
+            <div class="timeline">
+                <div class="line top-line">
+                    <div class="line-item">
+                        <div class="circle">
+                            <div class="timeline-icon">
+                                <i class="fa-solid fa-eye"></i>
                             </div>
                         </div>
-                        <div class="line-item">
-                            <div class="circle">
-                                <i class="fa-solid fa-cart-shopping"></i>
-                            </div>
-                            <div class="text">
-                                <h4>Добавить в корзину</h4>
-                                <p>После выбора, перейдя по ссылке в профиле отправляеете заказ на наш WhatsApp/Telegram
-                                    номер
-                                </p>
-                            </div>
-                        </div>
-                        <div class="line-item">
-                            <div class="circle">
-                                <i class="fa-solid fa-dollar-sign"></i>
-                            </div>
-                            <div class="text">
-                                <h4>Оплата</h4>
-                                <p>После того, как вы согласавали заказ с менеджером, оплачиваете заказ. Действует карт.
-                                    счета:
-                                    Kaspi, Halyk Bank</p>
-                            </div>
+                        <div class="text">
+                            <h4>ОБЗОР</h4>
+                            <p class="visible-text">Просмотр нашей коллекции в ленте инстаграмм или в ленте телеграмма
+                            </p>
                         </div>
                     </div>
-                    <div class="line bottom-line">
-                        <div class="line-item">
-                            <div class="circle">
-                                <i class="fa-solid fa-truck"></i>
-                            </div>
-                            <div class="text">
-                                <h4>Доставка</h4>
-                                <p>Время доставки зависит от того, где вы находитесь. Доставка в пределах страны обычно
-                                    занимает
-                                    от 1 до 7 дней. ОТправляем Казпочтой, ЖД поездом, камаз. В РФ отправляем через
-                                    логистическую
-                                    компанию "Энергия"</p>
-                            </div>
+                    <div class="line-item">
+                        <div class="circle">
+                            <i class="fa-solid fa-cart-shopping"></i>
                         </div>
-                        <div class="line-item line-item-finish">
-                            <div class="circle">
-                                <i class="fa-solid fa-check"></i>
-                            </div>
-                            <div class="text">Конец</div>
+                        <div class="text">
+                            <h4>Добавить в корзину</h4>
+                            <p class="visible-text">После выбора, перейдя по ссылке в профиле отправляеете заказ на наш
+                                WhatsApp/Telegram
+                                номер
+                            </p>
                         </div>
-
                     </div>
+                    <div class="line-item">
+                        <div class="circle">
+                            <i class="fa-solid fa-dollar-sign"></i>
+                        </div>
+                        <div class="text">
+                            <h4>Оплата</h4>
+                            <p class="visible-text">После того, как вы согласавали заказ с менеджером, оплачиваете
+                                заказ. Действует карт.
+                                счета:
+                                Kaspi, Halyk Bank</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="line bottom-line">
+                    <div class="line-item last-one">
+                        <div class="circle">
+                            <i class="fa-solid fa-truck"></i>
+                        </div>
+                        <div class="text">
+                            <h4>Доставка</h4>
+                            <p class="visible-text">Время доставки зависит от того, где вы находитесь. Доставка в
+                                пределах страны обычно
+                                занимает
+                                от 1 до 7 дней. ОТправляем Казпочтой, ЖД поездом, камаз. В РФ отправляем через
+                                логистическую
+                                компанию "Энергия"</p>
+                        </div>
+                    </div>
+                    <div class="line-item line-item-finish">
+                        <div class="circle">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <div class="text">Конец</div>
+                    </div>
+
                 </div>
     </section>
 
@@ -289,7 +303,8 @@
             </div>
             <div class="contact_content_info">
                 <h3>Наш адрес</h3>
-                <p>Мы располагаемся по адресу: Республика Казахстан, г. Шымкент , рынок Алаш, торговый дом Береке 8 бутик </p>
+                <p>Мы располагаемся по адресу: Республика Казахстан, г. Шымкент , рынок Алаш, торговый дом Береке 8
+                    бутик </p>
                 <hr>
                 <h3>Социальные сети</h3>
                 <div class="social-networks">
