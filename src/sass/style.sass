@@ -1,7 +1,11 @@
 *
     font-family: 'Roboto', sans-serif
+
 body
-    background: #ffff
+    background: #FF9398
+    background-image: linear-gradient(45deg, rgba(255,255,255,0.2) 25%, transparent 15%), linear-gradient(-45deg, rgba(255,255,255,0.2) 25%, transparent 25%)
+    background-size: 4px 4px
+    background-position: 0 0, 2px 2px
 
 .header
     display: flex
@@ -36,8 +40,9 @@ body
             line-height: 100%
 
 .promo
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.2)), url('../img/vizir-hands.jpg') center center / cover no-repeat
+    // background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.2)), url('../img/vizir-hands.jpg') center center / cover no-repeat
     height: 900px
+    background: white
     &_img
         right: 300px
         top: 50px
@@ -46,106 +51,70 @@ body
         img
             width: 100%
             height: 100%
-    &_text
+    &_wrapper
         display: flex
         flex-direction: column
-        width: 500px
-        height: 600px
-        padding: 20px
-        margin-left: 50px
+        align-items: center
+        padding: 300px 0 100px 0
+    &_text
+        // width: 500px
+        // height: 500px
         &_title
-            font-size: 4em
+            font-size: 38px
             font-weight: 500
-            line-height: 60px
+            line-height: 36
             color: #1c1d1d
-            padding-top: 300px
-
+            text-align: center
         &_description
-            margin-top: 23px
-            font-weight: 300
-            font-size: 15px
+            width: 800px
+            margin-top: 25px
+            font-weight: 400
+            font-size: 20px
             line-height: 23px
             color: #1c1d1d
+            text-align: center
 
 .why_us
 
     width: 100%
     margin: 0 auto
-    background: #FF9398
     padding: 20px 0
+
     .container
-        position: relative
-        top: -40px
-        display: flex
-        justify-content: space-between
-        align-items: center
-        max-width: 1200px
         width: 100%
         padding: 0 20px
         gap: 20px
-        background: #FF9398
         border-radius: 30px 30px 30px 30px
-        height: 300px
-
+        height: auto
     &_title
         margin-top: 20px
         font-size: 38px
         font-weight: 400
         text-align: center
         text-transform: uppercase
-        color: #333333
-
-    &_decr
-        margin-top: 10px
-        text-align: center
-        color: #666666
-        font-size: 1em
-        padding: 0 20px
-
     .cards
+        padding: 50px 0 60px 0
         display: flex
-        justify-content: center
+        justify-content: space-evenly
         gap: 20px
-        padding: 0px 0
-
         .card_item
-            border-radius: 30px
-            height: 350px
-            width: 100%
-            max-width: 500px
-            background: white
-            border: 1px solid #ECD06F
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 8px 16px rgba(0, 0, 0, 0.05)
-            overflow: hidden
+            display: flex
+            justify-content: center
+            flex-direction: column
             text-align: center
-            padding: 10px
-
-            &_1
-                border-radius: 30px 0 0 0
-
-            &_2
-                border-radius: 0
-
-            &_3
-                border-radius: 0 30px 0 0
-
+            align-items: center
+            max-width: 300px
             &_img
-                width: 150px
-                height: 150px
-                margin: 0 auto
-                overflow: hidden
-                border-radius: 50%
-
+                width: 60%
+                height: 200px
                 img
                     width: 100%
                     height: 100%
-                    object-fit: cover
-
             &_text
                 margin-top: 20px
-                padding: 10px
-                font-size: 1.1em
-                color: #333333
+
+        .card_item:nth-child(even)
+            flex-direction: column-reverse
 
 .about_us
     height: 900px
@@ -492,7 +461,7 @@ body
     background: #ff9398
     height: auto
     padding: 20px 0 40px 0
-    marh
+
     .title
         color: white
     &_content
@@ -528,4 +497,3 @@ body
                     gap: 10px
                 .fa-brands
                     font-size: 3rem
-              
