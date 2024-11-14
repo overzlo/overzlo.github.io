@@ -1,10 +1,15 @@
 *
-    font-family: "Bubblegum Sans", sans-serif
+    font-family: "PT Serif", serif
+html
+    scroll-behavior: smooth
+
 =btn_hover
     &:hover
         background: none
         background: #FF9398
-
+a
+    text-decoration: none
+    color: white
 body
     background: #FF9398
     background-image: linear-gradient(45deg, rgba(255,255,255,0.2) 25%, transparent 15%), linear-gradient(-45deg, rgba(255,255,255,0.2) 25%, transparent 25%)
@@ -18,7 +23,7 @@ nav
     background-color: white
 
 .menu
-    height: 120px 
+    height: 120px
     display: flex
     justify-content: space-between
     align-items: center
@@ -53,7 +58,6 @@ nav
         background-color: black
         border-radius: 10px
 
-
 .promo
     background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.2)), url('../img/background-promo.jpg') center center / cover no-repeat
     height: 900px
@@ -67,26 +71,56 @@ nav
             height: 100%
     &_wrapper
         display: flex
-        flex-direction: column
+        justify-content: center
+        align-content: center
         align-items: center
-        padding: 300px 0 100px 0
-    &_text
-        // width: 500px
-        // height: 500px
-        &_title
-            font-size: 38px
-            font-weight: 500
-            line-height: 36
-            color: #1c1d1d
-            text-align: center
-        &_description
-            width: 800px
-            margin-top: 25px
-            font-weight: 400
-            font-size: 20px
-            line-height: 23px
-            color: #1c1d1d
-            text-align: center
+        position: relative
+        top: 50%
+        transform: translateY(-50%)
+        gap: 40px
+        .promo_text
+            display: flex
+            flex-direction: column
+            text-align: left
+            align-items: flex-start
+            &_title
+                font-size: 38px
+                font-weight: 700
+                line-height: 1.5
+                color: black
+            &_description
+                width: 800px
+                margin-top: 25px
+                font-weight: 400
+                font-size: 1.5rem
+                line-height: 1.5
+                color: black
+    .promo_btn
+        font-size: 25px
+        margin: 45px 0 0 0
+        padding: 30px
+        background: linear-gradient(45deg, #ff7e5f, #feb47b)
+        border: none
+        border-radius: 8px
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2)
+        cursor: pointer
+        transition: all 0.3s ease
+        font-family: Arial, sans-serif
+
+    .promo_btn:hover
+        background: linear-gradient(45deg, #feb47b, #ff7e5f)
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3)
+        transform: translateY(-2px)
+
+    .promo_btn:active
+        transform: translateY(1px)
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2)
+
+video
+    position: relative
+    display: block
+    text-align: center
+    object-fit: cover
 
 .why_us
 
@@ -128,7 +162,7 @@ nav
             &_text
                 margin-top: 20px
                 h3
-                    font-weight: 500
+                    font-weight: 700
                     font-size: 1.5rem
                 p
                     font-weight: 400
@@ -246,7 +280,7 @@ nav
         margin-top: 40px
         display: flex
         justify-content: center
-        gap: 20px
+        gap: 30px
         flex-wrap: wrap
         .ass_card_img
             display: flex
@@ -291,6 +325,29 @@ nav
 
             margin: 0
             margin-top: 30px
+
+        .promo_btn
+            font-size: 25px
+            margin: 45px 0 0 0
+            padding: 30px
+            // background: linear-gradient(45deg, #ff7e5f, #feb47b)
+            border: none
+            border-radius: 8px
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2)
+            cursor: pointer
+            transition: all 0.3s ease
+            font-family: Arial, sans-serif
+
+        .promo_btn:hover
+            // background: linear-gradient(45deg, #feb47b, #ff7e5f)
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3)
+            transform: translateY(-2px)
+
+        .promo_btn:active
+            transform: translateY(1px)
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2)
+        a
+            color: #FF9398
 .btn
     border: none
     font-size: inherit
@@ -310,9 +367,8 @@ nav
     transition: all 0.3s
 
 .how-to-order
-    padding: 20px 0 20px 0
+    padding: 30px 0 40px 0
     background: url('../img/Подложка.png')
-    height: 700px
     .title
         line-height: 1.5
         margin-bottom: 0
@@ -324,8 +380,9 @@ nav
         margin-bottom: 20px
 
 .contact
-    background: #ff9398
-    height: auto
+    // background: #ff9398
+    height: 900px
+    overflow: hidden
     &_content
         display: flex
         &_info
@@ -358,4 +415,71 @@ nav
                     gap: 10px
                 .fa-brands
                     font-size: 3rem
+.circle
+    font-weight: bold
+    border-radius: 50%
+    color: white
+    max-height: 50px
+    z-index: 2
+    display: flex
+    justify-content: center
+    align-items: center
+.how-it-works.row
+    display: flex
+
+    .col-2
+        display: inline-flex
+        align-self: stretch
+        align-items: center
+        justify-content: center
+        &::after
+            content: ''
+            position: absolute
+            border-left: 3px solid black
+            z-index: 1
+        .col-2.bottom
+            &::after
+                height: 50%
+                left: 50%
+                top: 50%
+        .col-2.full
+            &::after
+                left: calc(50% - 3px)
+        .col-2.top
+            &::after
+                height: 50%
+                left: 50%
+                top: 0
+
+.timeline
+
+    div
+        padding: 0
+        height: 40px
+    hr
+        border-top: 3px solid black
+        margin: 0
+        top: 17px
+        position: relative
+    .col-2
+        display: flex
+        overflow: hidden
+    .corner
+        border: 3px solid black
+        width: 100%
+        position: relative
+        border-radius: 15px
+    .top-right
+        left: 50%
+        top: -50%
+    .left-bottom
+        left: -50%
+        top: calc(50% - 3px)
+    .top-left
+        left: -50%
+        top: -50%
+    .right-bottom
+        left: 50%
+        top: calc(50% - 3px)
+
 @import "media"

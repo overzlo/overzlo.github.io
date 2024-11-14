@@ -5,13 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Document</title>
+    <title>VIZIR COLLECTION</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
-
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
 
@@ -29,12 +28,12 @@
             <div class="container">
                 <ul class="menu">
                     <li class="menu_item"><a href="#" class="menu_link">Главная</a></li>
-                    <li class="menu_item"><a href="#" class="menu_link">Что мы предлагаем</a></li>
-                    <li class="menu_item"><a href="#" class="menu_link">Наши товары</a></li>
+                    <li class="menu_item"><a href="#why" class="menu_link">Что мы предлагаем</a></li>
+                    <li class="menu_item"><a href="#assortiments" class="menu_link">Наши товары</a></li>
                     <li class="menu_item"><img src="img/logo.png" alt="" class="visible-img"></li>
-                    <li class="menu_item"><a href="#" class="menu_link">О нас</a></li>
-                    <li class="menu_item"><a href="#" class="menu_link">Процесс заказа</a></li>
-                    <li class="menu_item"><a href="#" class="menu_link">Контакты</a></li>
+                    <li class="menu_item"><a href="#us" class="menu_link">О нас</a></li>
+                    <li class="menu_item"><a href="#order" class="menu_link">Процесс заказа</a></li>
+                    <li class="menu_item"><a href="#contacts" class="menu_link">Контакты</a></li>
                 </ul>
             </div>
             <div class="hamburger">
@@ -50,19 +49,30 @@
         <div class="promo_wrapper">
             <div class="promo_text">
                 <div class="promo_text_title">
-                    <h1>VIZIR COLLECTION <br> детская одежда оптом</h1>
+                    <h1>VIZIR COLLECTION <br> Детская одежда оптом</h1>
                 </div>
                 <div class="promo_text_description">Фабрика VIZIR занимается производством детских вещей на протяжении
                     более 12 лет на территории Узбекистана. Качество наших вещей соответствует международным
                     стандартам. Цены от производителя приятно удивят Вас. Осуществляем доставку по всему Казахстану
                     и странам СНГ.
                 </div>
+                <button class="btn btn-1 btn-sep icon-info promo_btn"><a
+                        href="https://www.instagram.com/vizircollection/">Связаться с нами</a></button>
+
             </div>
-            <button class="btn btn-1 btn-sep icon-info">Связаться с нами</button>
+            <div class="video_wrap">
+                <video controls="controls" autoplay="autoplay" height="600px" width="500px">
+                    <source src="video/vizir.mp4">
+                </video>
+            </div>
         </div>
 
     </section>
-    <section class="why_us">
+    <section class="video_section">
+
+
+    </section>
+    <section class="why_us" id="why">
         <div class="title">
             <h2>Что мы предлагаем</h2>
         </div>
@@ -81,7 +91,7 @@
                         <div class="card_item">
                             <div class="card_item_img"><img src="img/icon5.png" alt=""></div>
                             <div class="card_item_text">
-                                <h3>Lorem</h3>
+                                <h3>Выгодные цены</h3>
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A repellat magnam
                                     asperiores aut veniam nostrum optio perspiciatis labore</p>
                             </div>
@@ -89,7 +99,7 @@
                         <div class="card_item">
                             <div class="card_item_img"><img src="img/icon3.png" alt=""></div>
                             <div class="card_item_text">
-                                <h3>Lorem</h3>
+                                <h3>Доставка по Казахстану и странам СНГ</h3>
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A repellat magnam
                                     asperiores aut veniam nostrum optio perspiciatis labore</p>
                             </div>
@@ -97,7 +107,7 @@
                         <div class="card_item">
                             <div class="card_item_img"><img src="img/icon4.png" alt=""></div>
                             <div class="card_item_text">
-                                <h3>Lorem</h3>
+                                <h3>Гарантия качества</h3>
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A repellat magnam
                                     asperiores aut veniam nostrum optio perspiciatis labore</p>
                             </div>
@@ -108,7 +118,7 @@
             </div>
 
     </section>
-    <section class="assortiments">
+    <section class="assortiments" id="assortiments">
         <div class="title">
             <h2>Наш ассортимент</h2>
         </div>
@@ -130,8 +140,8 @@
         </div>
 
         <div class="assortiments_cards_2">
-            <img src="img/kid-5.jpg" onclick="openModal(this)" alt="">
-            <img src="img/kid-1.jpg" onclick="openModal(this)" alt="">
+            <img src="img/ass-10.jpg" onclick="openModal(this)" alt="">
+            <img src="img/ass-11.jpg" onclick="openModal(this)" alt="">
             <img src="img/kid-2.jpg" onclick="openModal(this)" alt="">
 
             <img src="img/ass4.jpg" onclick="openModal(this)">
@@ -148,7 +158,7 @@
                     потребностей самых маленьких и активных детей, гарантируя удобство и стиль на каждом этапе
                     их роста.
                 </div>
-                <button class="btn btn-1 btn-sep icon-info">Посмотреть весь каталог!</button>
+                <button class="btn btn-1 btn-sep icon-info promo_btn"><a href="https://www.instagram.com/vizircollection/">Посмотреть весь каталог!</a></button>
             </div>
             <img src="img/ass8.jpg" onclick="openModal(this)" class="visible-img">
 
@@ -161,7 +171,7 @@
 
 
 
-    <section class="about_us">
+    <section class="about_us" id="us">
         <div class="title">О нашей фабрике</div>
 
         <div class="about_us_content">
@@ -192,16 +202,18 @@
         </div>
     </section>
 
-    <section class="certificates">
+    <section class="certificates" id="certificates">
         <div class="title">Сертифакты</div>
         <div class="container">
             <div class="certificates_text">
                 Мы гордимся нашими сертификатами, подтверждающими соответствие международным стандартам качества.
             </div>
             <div class="certificates_gallery">
-                <img src="img/certificate1.jpg" alt="Certificate 1" onclick="openModal(this)">
-                <img src="img/certificate2.jpg" alt="Certificate 2" onclick="openModal(this)">
-                <img src="img/certificate3.jpg" alt="Certificate 3" onclick="openModal(this)">
+                <img src="img/c1.jpg" alt="Certificate 1" onclick="openModal(this)">
+                <img src="img/c2.jpg" alt="Certificate 2" onclick="openModal(this)">
+                <img src="img/c3.jpg" alt="Certificate 3" onclick="openModal(this)">
+                <img src="img/c4.jpg" alt="Certificate 3" onclick="openModal(this)">
+
             </div>
         </div>
 
@@ -215,92 +227,144 @@
 
 
 
-    <section class="how-to-order">
+    <section class="how-to-order" id="order">
         <div class="title">Как мы работаем</div>
         <div class="container">
             <div class="subtitle">Следуйте этим шагам для быстрого и удобного оформления заказа</div>
 
-            <div class="timeline">
-                <div class="line top-line">
-                    <div class="line-item">
-                        <div class="circle">
-                            <div class="timeline-icon">
-                                <i class="fa-solid fa-eye"></i>
-                            </div>
+            <div class="container-fluid blue-bg">
+                <div class="container">
+                    <!-- Step 1: Overview -->
+                    <div class="row align-items-center how-it-works">
+                        <div class="col-2 text-center bottom">
+                            <div class="circle">1</div>
                         </div>
-                        <div class="text">
-                            <h4>ОБЗОР</h4>
-                            <p class="visible-text">Просмотр нашей коллекции в ленте инстаграмм или в ленте телеграмма
-                            </p>
+                        <div class="col-6">
+                            <h5>ОБЗОР</h5>
+                            <p>Просмотр нашей коллекции в ленте инстаграмм или в ленте телеграмма</p>
                         </div>
-                    </div>
-                    <div class="line-item">
-                        <div class="circle">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </div>
-                        <div class="text">
-                            <h4>Добавить в корзину</h4>
-                            <p class="visible-text">После выбора, перейдя по ссылке в профиле отправляеете заказ на наш
-                                WhatsApp/Telegram
-                                номер
-                            </p>
-                        </div>
-                    </div>
-                    <div class="line-item">
-                        <div class="circle">
-                            <i class="fa-solid fa-dollar-sign"></i>
-                        </div>
-                        <div class="text">
-                            <h4>Оплата</h4>
-                            <p class="visible-text">После того, как вы согласавали заказ с менеджером, оплачиваете
-                                заказ. Действует карт.
-                                счета:
-                                Kaspi, Halyk Bank</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="line bottom-line">
-                    <div class="line-item last-one">
-                        <div class="circle">
-                            <i class="fa-solid fa-truck"></i>
-                        </div>
-                        <div class="text">
-                            <h4>Доставка</h4>
-                            <p class="visible-text">Время доставки зависит от того, где вы находитесь. Доставка в
-                                пределах страны обычно
-                                занимает
-                                от 1 до 7 дней. ОТправляем Казпочтой, ЖД поездом, камаз. В РФ отправляем через
-                                логистическую
-                                компанию "Энергия"</p>
-                        </div>
-                    </div>
-                    <div class="line-item line-item-finish">
-                        <div class="circle">
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                        <div class="text">Конец</div>
                     </div>
 
+                    <!-- Path Between 1-2 -->
+                    <div class="row timeline">
+                        <div class="col-2">
+                            <div class="corner top-right"></div>
+                        </div>
+                        <div class="col-8">
+                            <hr>
+                        </div>
+                        <div class="col-2">
+                            <div class="corner left-bottom"></div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Add to Cart -->
+                    <div class="row align-items-center justify-content-end how-it-works">
+                        <div class="col-6 text-right">
+                            <h5>Добавить в корзину</h5>
+                            <p>После выбора, перейдя по ссылке в профиле отправляете заказ на наш WhatsApp/Telegram
+                                номер</p>
+                        </div>
+                        <div class="col-2 text-center full">
+                            <div class="circle">2</div>
+                        </div>
+                    </div>
+
+                    <!-- Path Between 2-3 -->
+                    <div class="row timeline">
+                        <div class="col-2">
+                            <div class="corner right-bottom"></div>
+                        </div>
+                        <div class="col-8">
+                            <hr>
+                        </div>
+                        <div class="col-2">
+                            <div class="corner top-left"></div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Payment -->
+                    <div class="row align-items-center how-it-works">
+                        <div class="col-2 text-center top">
+                            <div class="circle">3</div>
+                        </div>
+                        <div class="col-6">
+                            <h5>Оплата</h5>
+                            <p>После того, как вы согласовали заказ с менеджером, оплачиваете заказ. Действует карт.
+                                счета: Kaspi, Halyk Bank</p>
+                        </div>
+                    </div>
+
+                    <!-- Path Between 3-4 -->
+                    <div class="row timeline">
+                        <div class="col-2">
+                            <div class="corner top-right"></div>
+                        </div>
+                        <div class="col-8">
+                            <hr>
+                        </div>
+                        <div class="col-2">
+                            <div class="corner left-bottom"></div>
+                        </div>
+                    </div>
+
+                    <!-- Step 4: Delivery -->
+                    <div class="row align-items-center justify-content-end how-it-works">
+                        <div class="col-6 text-right">
+                            <h5>Доставка</h5>
+                            <p>Время доставки зависит от того, где вы находитесь. Доставка в пределах страны обычно
+                                занимает от 1 до 7 дней. Отправляем Казпочтой, ЖД поездом, камаз. В РФ отправляем через
+                                логистическую компанию "Энергия".</p>
+                        </div>
+                        <div class="col-2 text-center full">
+                            <div class="circle">4</div>
+                        </div>
+                    </div>
+
+                    <!-- Path Between 4 and End -->
+                    <div class="row timeline">
+                        <div class="col-2">
+                            <div class="corner right-bottom"></div>
+                        </div>
+                        <div class="col-8">
+                            <hr>
+                        </div>
+                        <div class="col-2">
+                            <div class="corner top-left"></div>
+                        </div>
+                    </div>
+
+                    <!-- Final Step: End -->
+                    <div class="row align-items-center how-it-works">
+                        <div class="col-2 text-center top">
+                            <div class="circle">Конец</div>
+                        </div>
+                        <div class="col-6">
+                            <h5>Конец процесса</h5>
+                            <p>Ваш заказ завершен. Благодарим за покупку!</p>
+                        </div>
+                    </div>
                 </div>
+            </div>
+
     </section>
 
 
 
-    <section class="contact">
+
+    <section class="contact" id="contact">
         <div class="contact_content">
-            <div style="position:relative;overflow:hidden;" class="map"><a
-                    href="https://yandex.kz/maps/org/alash/108573670224/?utm_medium=mapframe&utm_source=maps"
-                    style="color:#eee;font-size:12px;position:absolute;top:0px;">Alash</a><a
-                    href="https://yandex.kz/maps/221/chimkent/category/shopping_mall/184108083/?utm_medium=mapframe&utm_source=maps"
-                    style="color:#eee;font-size:12px;position:absolute;top:14px;">Торговый центр в
-                    Шымкенте</a><a
-                    href="https://yandex.kz/maps/221/chimkent/category/farmers_market/187142065569/?utm_medium=mapframe&utm_source=maps"
-                    style="color:#eee;font-size:12px;position:absolute;top:28px;">Продуктовый рынок в
-                    Шымкенте</a><iframe
-                    src="https://yandex.kz/map-widget/v1/?ll=69.530130%2C42.355725&mode=poi&poi%5Bpoint%5D=69.529613%2C42.354880&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D108573670224&z=18.39"
-                    width="1000px" height="900px" frameborder="1" allowfullscreen="true"
-                    style="position:relative"></iframe>
-            </div>
+            <a class="dg-widget-link"
+                href="http://2gis.kz/shymkent/firm/70000001090348023/center/69.531507,42.355592/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть
+                на карте Шымкента</a>
+            <div class="dg-widget-link"><a
+                    href="http://2gis.kz/shymkent/center/69.531507,42.355592/zoom/16/routeTab/rsType/bus/to/69.531507,42.355592╎Береке, торговый центр?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти
+                    проезд до Береке, торговый центр</a></div>
+            <script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script>
+            <script
+                charset="utf-8">new DGWidgetLoader({ "width": 700, "height": 900, "borderColor": "#a3a3a3", "pos": { "lat": 42.355592, "lon": 69.531507, "zoom": 16 }, "opt": { "city": "shymkent" }, "org": [{ "id": "70000001090348023" }] });</script>
+            <noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите
+                его в настройках вашего браузера.</noscript>
             <div class="contact_content_info">
                 <h3>Наш адрес</h3>
                 <p>Мы располагаемся по адресу: Республика Казахстан, г. Шымкент , рынок Алаш, торговый дом Береке 8

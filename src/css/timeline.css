@@ -1,11 +1,11 @@
-.timeline {
+/* .timeline {
   margin-top: 40px;
   padding-right: 100px;
   position: relative;
 }
 
 /* Rounded corner for the timeline line */
-.timeline::after {
+/* .timeline::after {
   content: '';
   position: absolute;
   right: 0;
@@ -124,5 +124,5 @@
     left: 51px;
     top: 5px;
   }
-}
-
+} */
+ 
