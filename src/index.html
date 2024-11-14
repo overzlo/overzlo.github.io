@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>VIZIR COLLECTION</title>
+    <title>Vizir Collection</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -33,7 +33,7 @@
                     <li class="menu_item"><img src="img/logo.png" alt="" class="visible-img"></li>
                     <li class="menu_item"><a href="#us" class="menu_link">О нас</a></li>
                     <li class="menu_item"><a href="#order" class="menu_link">Процесс заказа</a></li>
-                    <li class="menu_item"><a href="#contacts" class="menu_link">Контакты</a></li>
+                    <li class="menu_item"><a href="#contact" class="menu_link">Контакты</a></li>
                 </ul>
             </div>
             <div class="hamburger">
@@ -44,6 +44,8 @@
         </nav>
 
     </header>
+    <button onclick="scrollToTop()" id="scrollTopBtn" title="Наверх"><i class="fa-solid fa-up-long"></i></button>
+
 
     <section class="promo">
         <div class="promo_wrapper">
@@ -61,9 +63,20 @@
 
             </div>
             <div class="video_wrap">
-                <video controls="controls" autoplay="autoplay" height="600px" width="500px">
+                <button class="video_button" onclick="openVideoModal()" style="display: none;">Смотреть видео</button>
+                <video controls muted autoplay height="600px" width="500px" class="p_video">
                     <source src="video/vizir.mp4">
                 </video>
+            </div>
+
+            <!-- Модальное окно для видео -->
+            <div id="videoModal" class="modal" style="display: none;">
+                <div class="modal_content">
+                    <span class="close" onclick="closeVideoModal()">&times;</span>
+                    <video controls autoplay muted height="400px" width="400px" class="m_video">
+                        <source src=" video/vizir.mp4">
+                    </video>
+                </div>
             </div>
         </div>
 
@@ -72,7 +85,7 @@
 
 
     </section>
-    <section class="why_us" id="why">
+    <section class="why_us fade-in bounce" id="why">
         <div class="title">
             <h2>Что мы предлагаем</h2>
         </div>
@@ -83,33 +96,37 @@
                         <div class="card_item">
                             <div class="card_item_img"><img src="img/icon1.png" alt=""></div>
                             <div class="card_item_text">
-                                <h3>Lorem</h3>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A repellat magnam
-                                    asperiores aut veniam nostrum optio perspiciatis labore</p>
+                                <h3>15 лет в рынке</h3>
+                                <p>В Vizir мы предлагаем одежду для детей от 1 до 8 лет, изготовленную из 100% хлопка,
+                                    безопасную для кожи, с яркими рисунками, и гарантируем её высокое качество благодаря
+                                    3-ступенчатому контролю.
+                                </p>
                             </div>
                         </div>
                         <div class="card_item">
                             <div class="card_item_img"><img src="img/icon5.png" alt=""></div>
                             <div class="card_item_text">
                                 <h3>Выгодные цены</h3>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A repellat magnam
-                                    asperiores aut veniam nostrum optio perspiciatis labore</p>
+                                <p>Цены от производителя! Специальные скидки для крупных оптовых заказов делают покупку
+                                    ещё более выгодной и привлекательной. </p>
                             </div>
                         </div>
                         <div class="card_item">
                             <div class="card_item_img"><img src="img/icon3.png" alt=""></div>
                             <div class="card_item_text">
                                 <h3>Доставка по Казахстану и странам СНГ</h3>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A repellat magnam
-                                    asperiores aut veniam nostrum optio perspiciatis labore</p>
+                                <p>Мы осуществляем доставку по всему Казахстану и странам СНГ. Для России предлагаем
+                                    отправку через надежную транспортную компанию 'Энергия' или через выбранного вами
+                                    перевозчика, чтобы обеспечить максимальное удобство и гибкость.</p>
                             </div>
                         </div>
                         <div class="card_item">
                             <div class="card_item_img"><img src="img/icon4.png" alt=""></div>
                             <div class="card_item_text">
                                 <h3>Гарантия качества</h3>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A repellat magnam
-                                    asperiores aut veniam nostrum optio perspiciatis labore</p>
+                                <p>Мы гарантируем высокое качество каждой единицы продукции, тщательно контролируя все
+                                    этапы производства. Вся наша одежда проходит строгую проверку, чтобы обеспечить
+                                    безопасность и комфорт для ваших детей.</p>
                             </div>
                         </div>
                     </div>
@@ -118,7 +135,7 @@
             </div>
 
     </section>
-    <section class="assortiments" id="assortiments">
+    <section class="assortiments fade-in" id="assortiments">
         <div class="title">
             <h2>Наш ассортимент</h2>
         </div>
@@ -140,14 +157,14 @@
         </div>
 
         <div class="assortiments_cards_2">
-            <img src="img/ass-10.jpg" onclick="openModal(this)" alt="">
-            <img src="img/ass-11.jpg" onclick="openModal(this)" alt="">
-            <img src="img/kid-2.jpg" onclick="openModal(this)" alt="">
+            <img src="img/ass12.jpg" onclick="openModal(this)" alt="">
+            <img src="img/ass13.jpg" onclick="openModal(this)" alt="">
+            <img src="img/ass14.jpg" onclick="openModal(this)" alt="">
 
             <img src="img/ass4.jpg" onclick="openModal(this)">
             <img src="img/ass5.jpg" onclick="openModal(this)">
             <img src="img/ass6.jpg" onclick="openModal(this)">
-            <img src="img/ass7.jpg" onclick="openModal(this)">
+            <img src="img/ass15.jpg" onclick="openModal(this)" class="visible-img">
 
             <div class="ass_card_text">
                 <div class="ass_card_text_title">Выбирайте лучшее для ваших детей с Vizir Collection!
@@ -158,9 +175,10 @@
                     потребностей самых маленьких и активных детей, гарантируя удобство и стиль на каждом этапе
                     их роста.
                 </div>
-                <button class="btn btn-1 btn-sep icon-info promo_btn"><a href="https://www.instagram.com/vizircollection/">Посмотреть весь каталог!</a></button>
+                <button class="btn btn-1 btn-sep icon-info promo_btn"><a
+                        href="https://www.instagram.com/vizircollection/">Посмотреть весь каталог!</a></button>
             </div>
-            <img src="img/ass8.jpg" onclick="openModal(this)" class="visible-img">
+            <img src="img/ass16.jpg" onclick="openModal(this)" class="visible-img">
 
         </div>
 
@@ -171,14 +189,30 @@
 
 
 
-    <section class="about_us" id="us">
-        <div class="title">О нашей фабрике</div>
+    <section class="about_us  bounce fade-in" id="us">
+        <div class="title">
+            <h2>О нашей фабрике</h2>
+        </div>
 
         <div class="about_us_content">
             <div class="about_us_content_img">
-                <img src="img/au-1.jpg" alt="" onclick="openModal(this)" class="main-img">
 
+                <div class="about_slides">
+                    <div class="about_slide">
+                        <img src="img/au-1.jpg" alt="Slide 1" class="main-img">
+                    </div>
+                    <div class="about_slide">
+                        <img src="img/au5.jpg" alt="Slide 2" class="main-img">
+                    </div>
+                    <div class="about_slide">
+                        <img src="img/au6.jpg" alt="Slide 3" class="main-img">
+                    </div>
+                    <!-- Навигационные кнопки -->
+                    <a class="about_slide-prev">❮</a>
+                    <a class="about_slide-next">❯</a>
+                </div>
             </div>
+
             <div class="about_us_content_text">
                 <p>
                     История «VIZIR» насчитывает более 10 лет, когда в 2009 году была запущена первая фабрика по
@@ -201,8 +235,19 @@
 
         </div>
     </section>
+    <section class="video-section fade-in bounce">
+        <div class="title">
+            <h2>Видео с нашей фабрики</h2>
+        </div>
 
-    <section class="certificates" id="certificates">
+        <div class="video-container">
+            <video autoplay loop muted controls class="main-video">
+                <source src="video/about_us.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <section class="certificates fade-in" id="certificates">
         <div class="title">Сертифакты</div>
         <div class="container">
             <div class="certificates_text">
@@ -227,8 +272,10 @@
 
 
 
-    <section class="how-to-order" id="order">
-        <div class="title">Как мы работаем</div>
+    <section class="how-to-order fade-in" id="order">
+        <div class="title">
+            <h2>Как происходит процесс покупки</h2>
+        </div>
         <div class="container">
             <div class="subtitle">Следуйте этим шагам для быстрого и удобного оформления заказа</div>
 
@@ -347,6 +394,10 @@
                 </div>
             </div>
 
+            <button class="btn btn-1 btn-sep icon-info promo_btn"><a href="https://t.me/vizircollectionkz">Посмотреть
+                    каталог</a></button>
+
+
     </section>
 
 
@@ -366,21 +417,31 @@
             <noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите
                 его в настройках вашего браузера.</noscript>
             <div class="contact_content_info">
-                <h3>Наш адрес</h3>
-                <p>Мы располагаемся по адресу: Республика Казахстан, г. Шымкент , рынок Алаш, торговый дом Береке 8
-                    бутик </p>
+                <h3>Контакты</h3>
+                <p>Мы располагаемся по адресу:
+                    <i><br>Республика Казахстан, г. Шымкент , <br> рынок Алаш, торговый
+                        дом Береке 8 бутик </i>
+                </p>
+                <p>Телефон: <i>+7 700 098 08 11,
+                        +7 778 098 11 11</i> </p>
                 <hr>
-                <h3>Социальные сети</h3>
                 <div class="social-networks">
+
+                    <div class="social">
+                        <a href="https://www.instagram.com/vizircollection/"><i class="fa-regular fa-envelope"></i> </a>
+                        <h4>vizirkids@gmail.com</h4>
+                    </div>
                     <div class="social">
                         <a href="https://www.instagram.com/vizircollection/"><i class="fa-brands fa-instagram"></i></a>
                         <h4>@vizicollection</h4>
                     </div>
-                    <div class="social"> <a href="https://t.me/VizirOptom"><i class="fa-brands fa-telegram"></i></a>
-                        <h4>@VizirOptom</h4>
+                    <div class="social"> <a href="https://t.me/vizircollectionkz"><i
+                                class="fa-brands fa-telegram"></i></a>
+                        <h4>@Vizircollection</h4>
                     </div>
                     <div class="social"><a href=""><i class="fa-brands fa-whatsapp"></i></a>
-                        <h4>+757445795</h4>
+                        <h4>+7 700 098 08 11, +7 778 098 11 11
+                        </h4>
                     </div>
                 </div>
             </div>
